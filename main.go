@@ -10,7 +10,6 @@ import (
 )
 
 func main() {
-
 	if err := RunPipeline(os.Stdin, os.Stdout); err != nil {
 		fmt.Fprint(os.Stderr, err)
 		os.Exit(1)

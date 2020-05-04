@@ -3,6 +3,8 @@
 > a [kpt](https://googlecontainertools.github.io/kpt/) function for removing a
 Kubernetes resource
 
+[![Build Status](https://travis-ci.org/dustinspecker/kpt-remove-resource.svg?branch=master)](https://travis-ci.org/dustinspecker/kpt-remove-resource)
+
 ## CLI usage
 
 To use this function via the kpt CLI run the following:

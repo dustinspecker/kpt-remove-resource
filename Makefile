@@ -5,6 +5,10 @@ all: test-unit build
 build:
 	docker build . --tag kpt-remove-resource:latest
 
+.PHONY: install-kpt
+install-kpt:
+	./scripts/install-kpt.sh
+
 .PHONY: test-unit
 test-unit:
 	go test ./... -cover -coverprofile=cover.out

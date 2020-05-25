@@ -1,0 +1,21 @@
+---
+kind: Deployment
+metadata:
+  name: matching-name
+  namespace: matching-namespace
+---
+kind: Deployment
+metadata:
+  name: different-name
+  namespace: matching-namespace
+---
+kind: Deployment
+metadata:
+  name: matching-name
+  namespace: different-namespace
+---
+kind: DaemonSet
+metadata:
+  name: matching-name
+  namespace: different-namespace
+---

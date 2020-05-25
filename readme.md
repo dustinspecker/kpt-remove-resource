@@ -10,7 +10,7 @@ Kubernetes resource
 To use this function via the kpt CLI run the following:
 
 ```bash
-kpt fn run . --image dustinspecker/kpt-remove-resource:lastest -- kind=KIND name=NAME namespace=NAMESPACE
+kpt fn run . --image dustinspecker/kpt-remove-resource:latest -- kind=KIND name=NAME namespace=NAMESPACE
 ```
 
 A kubernetes resource matching the `kind`, `name`, and `namespace` will be removed.

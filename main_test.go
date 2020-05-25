@@ -63,7 +63,7 @@ items:
   - kind: DaemonSet
     metadata:
       name: matching-name
-      namespace: different-namespace
+      namespace: matching-namespace
 `
 
 	writer := &bytes.Buffer{}

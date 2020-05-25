@@ -1,3 +1,5 @@
+.DEFAULT_GOAL := test
+
 .PHONY: all
 all: test-unit build
 
@@ -8,6 +10,9 @@ build:
 .PHONY: install-kpt
 install-kpt:
 	./scripts/install-kpt.sh
+
+.PHONY: test
+test: test-unit test-integration
 
 .PHONY: test-unit
 test-unit:
